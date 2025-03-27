@@ -1,0 +1,283 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fef5f0;
+}
+
+/* Header Styling */
+header {
+    background-color:  #fef5f0;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+span{
+    color: chocolate;
+    font-weight: bold;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+}
+
+.icon img {
+    width: 50px;
+    height: auto;
+}
+
+.navlist {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navlist a {
+    color: chocolate;
+    text-decoration: none;
+    font-weight: bold;
+}
+.navlist :hover {
+    color: chocolate;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+
+/* Homepage Section */
+.homepage {
+    margin: 0;
+    padding: 0;
+    height: 79vh;
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('es-teler.jpg') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.front {
+    background-color: transparent;
+    padding: 2rem;
+    color: white;
+    max-width: 800px;
+}
+
+.isi {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.isi :first-child {
+    font-size: xx-large;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+}
+
+.isi :last-child {
+    font-size: large;
+    color: white;
+    margin: 0;
+}
+
+.front button {
+    background-color: chocolate;
+    color: white;
+    border: none;
+    padding: 0.8rem 2rem;
+    border-radius: 5px;
+    margin-top: 2rem;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.front button:hover {
+    background-color: red;
+    transform: scale(1.05);
+}
+
+/* About Section */
+.about {
+    padding: 2rem;
+    background-color: white;
+}
+
+.section-title {
+    font-size: xx-large;
+    color: chocolate;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.about-content {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.about-text {
+    flex: 1;
+    font-size: medium;
+    line-height: 1.6;
+}
+
+.about-image {
+    flex: 1;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Price List Section */
+.price-list {
+    padding: 2rem;
+    background-color: #fef5f0;
+}
+
+.price-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.price-table th, .price-table td {
+    padding: 1rem;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.price-table th {
+    background-color: chocolate;
+    color: white;
+}
+
+.size-cell {
+    font-weight: bold;
+    color: chocolate;
+}
+
+/* Footer Styling */
+footer {
+    background-color: chocolate;
+    color: white;
+    padding: 2rem;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.footer-info {
+    font-size: medium;
+    line-height: 1.6;
+}
+
+.footer-form input {
+    display: block;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+}
+
+.footer-form button {
+    background-color: white;
+    color: chocolate;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.footer-form button:hover {
+    background-color: red;
+    color: white;
+    transform: scale(1.05);
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid white;
+    font-size: small;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+    }
+
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .isi {
+        font-size: large;
+    }
+
+    .section-title {
+        font-size: x-large;
+    }
+}
+
+@media (max-width: 480px) {
+    .price-table {
+        font-size: small;
+    }
+
+    .isi {
+        font-size: medium;
+    }
+
+    .section-title {
+        font-size: large;
+    }
+}
+
+.title-background {
+    position: relative;
+    display: inline-block;
+}
+
+.title-background img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1300px;
+    height: 670px;
+    opacity: 0.9;
+    z-index: -1;
+}
+
+.title-text {
+    position: relative;
+    font-size: xx-large;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    z-index: 1;
+}
